@@ -1409,7 +1409,6 @@ This function is run by an idle timer to print the type
 ;;        (or nil ; (haskell-doc-print-var-docstring current-symbol)
 ;;            (haskell-doc-show-type current-fnsym)))))))
 
-;;;###autoload
 (defun haskell-doc-current-info ()
   "Return the info about symbol at point.
 Meant for `eldoc-documentation-function'."
@@ -1439,7 +1438,6 @@ function.  Only the user interface is different."
                 (eq (char-after (line-beginning-position)) ?\>))
            (nth 8 (syntax-ppss)))))
 
-;;;###autoload
 (defun haskell-doc-show-type (&optional sym)
   "Show the type of the function near point or given symbol SYM.
 For the function under point, show the type in the echo area.

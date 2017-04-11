@@ -294,7 +294,6 @@ Prompts for an arbitrary regexp given a prefix arg PROMPT."
            "*.hs *.lhs *.hsc *.chs *.hs-boot *.lhs-boot"
            (haskell-session-current-dir (haskell-interactive-session)))))
 
-;;;###autoload
 (defun haskell-process-do-info (&optional prompt-value)
   "Print info on the identifier at point.
 If PROMPT-VALUE is non-nil, request identifier via mini-buffer."
@@ -322,7 +321,6 @@ If PROMPT-VALUE is non-nil, request identifier via mini-buffer."
         (when command
           (haskell-process-show-repl-response command))))))
 
-;;;###autoload
 (defun haskell-process-do-type (&optional insert-value)
   "Print the type of the given expression.
 
@@ -615,7 +613,6 @@ Query PROCESS to `:cd` to directory DIR."
                               (string-match "^<interactive>" response))
                     (haskell-mode-message-line response)))))))
 
-;;;###autoload
 (defun haskell-mode-show-type-at (&optional insert-value)
   "Show type of the thing at point or within active region asynchronously.
 This function requires GHCi 8+ or GHCi-ng.
