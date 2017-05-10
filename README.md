@@ -20,8 +20,7 @@ Clone this repository and build it:
 
 ```
 $ git clone https://github.com/neongreen/haskell-mode-neongreen
-$ cd haskell-mode-neongreen
-$ make
+$ cd haskell-mode-neongreen && make
 ```
 
 Enable it in Emacs by adding the following to `init.el` (replace `~/code` with wherever you cloned the repository):
@@ -35,3 +34,9 @@ Enable it in Emacs by adding the following to `init.el` (replace `~/code` with w
 If you had `(require 'haskell)` in your `init.el`, comment it out.
 
 Restart Emacs.
+
+## Troubleshooting
+
+> I'm getting `error: Required feature 'haskell-mode-autoloads' was not provided`
+
+You probably forgot to do `make`.
